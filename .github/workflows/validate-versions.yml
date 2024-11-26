@@ -1,0 +1,21 @@
+name: Check Docker Images for All Versions in updates.yaml
+
+on:
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  check-docker-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install packages
+        run: npm install
+      - name: Run Docker image check script
+        run: npm run check-docker-images
