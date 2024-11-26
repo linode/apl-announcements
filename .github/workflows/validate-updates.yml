@@ -12,15 +12,12 @@ on:
 
 jobs:
   validate-yaml:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Install packages
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
