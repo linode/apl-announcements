@@ -1,7 +1,12 @@
 name: Check Docker Images for All Versions in updates.yaml
 
 on:
-  workflow_dispatch: # Allows manual trigger
+  push:
+    paths:
+      - 'updates.yaml'
+  pull_request:
+    paths:
+      - 'updates.yaml'
 
 jobs:
   check-docker-images:
