@@ -29,11 +29,12 @@ jobs:
       - name: Install Ajv CLI and js-yaml
         run: |
           npm install -g ajv-cli
+          npm install -g js-yaml
 
       - name: Validate updates.yaml
         id: validate-updates
         run: |
-          yq updates.yaml -ojson > converted-file.json
+          js-yaml updates.yaml > converted-file.json
           ajv validate -s updates.schema.json -d converted-file.json
 
       - name: Print success message
