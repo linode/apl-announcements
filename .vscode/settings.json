@@ -21,6 +21,6 @@
   "prettier.enable": true,
   "yaml.schemas": {
     "./updates.schema.json": "updates.yaml",
-    "https://json-schema.org/draft-07/schema": "updates.schema.json"
+    "https://json-schema.org/draft/2020-12/schema": "updates.schema.json"
   }
 }

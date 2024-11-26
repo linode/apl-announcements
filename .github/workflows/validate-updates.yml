@@ -17,7 +17,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      - name: Install packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yq
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,12 +29,11 @@ jobs:
       - name: Install Ajv CLI and js-yaml
         run: |
           npm install -g ajv-cli
-          npm install -g js-yaml
 
       - name: Validate updates.yaml
         id: validate-updates
         run: |
-          npx js-yaml updates.yaml > converted-file.json
+          yq updates.yaml -ojson > converted-file.json
           ajv validate -s updates.schema.json -d converted-file.json
 
       - name: Print success message
