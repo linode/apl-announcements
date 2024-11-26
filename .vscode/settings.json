@@ -1,0 +1,26 @@
+{
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "files.associations": {
+    "*.yml": "yaml",
+    "CODE_OF_CONDUCT": "markdown",
+    "CONTRIBUTING": "markdown"
+  },
+  "files.exclude": {
+    "**/.history": true
+  },
+  "prettier.enable": true,
+  "yaml.schemas": {
+    "./updates.schema.json": "updates.yaml",
+    "https://json-schema.org/draft-07/schema": "updates.schema.json"
+  }
+}
