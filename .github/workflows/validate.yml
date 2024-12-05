@@ -1,0 +1,28 @@
+name: Check Docker Images for All Versions in updates.yaml
+
+on:
+  push:
+    paths:
+      - 'updates.yaml'
+  pull_request:
+    paths:
+      - 'updates.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install packages
+        run: npm install
+      - name: Run Docker image check script
+        run: |
+          npm run validate-with-schema
+          npm run validate-with-dockerhub

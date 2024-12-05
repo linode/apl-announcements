@@ -1,0 +1,3 @@
+updates:
+  - version: v4.1.0
+    message: 'Configure Linode Object storage for platform with the wizard page'

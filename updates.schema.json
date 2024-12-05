@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "string",
+            "pattern": "^v\\d+\\.\\d+\\.\\d+$"
+          },
+          "message": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9 .,_-]{1,250}$",
+            "maxLength": 250
+          }
+        },
+        "required": ["version", "message"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["updates"],
+  "additionalProperties": false
+}
