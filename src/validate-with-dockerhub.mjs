@@ -35,7 +35,6 @@ async function main() {
   }
 }
 
-// Execute the main function
 main().catch((err) => {
   console.error(`Unexpected error: ${err.message}`)
   process.exit(1)
