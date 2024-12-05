@@ -3,7 +3,7 @@
 import fs from 'fs'
 import yaml from 'js-yaml'
 
-const filePath = 'updates.yaml' // Update with the correct path to updates.yaml
+const filePath = 'updates.yaml'
 let updates
 
 // Load the updates.yaml file
@@ -19,7 +19,7 @@ let allImagesExist = true
 
 for (const update of updates) {
   const version = update.version
-  const imageTag = `linode/apl-core:${version}` // Update with your Docker image details
+  const imageTag = `linode/apl-core:${version}`
 
   console.log(`Checking Docker image: ${imageTag}`)
   try {
