@@ -25,4 +25,4 @@ jobs:
       - name: Run Docker image check script
         run: |
           npm run validate-with-schema
-          npm run validate-with-schema
+          npm run validate-with-dockerhub
