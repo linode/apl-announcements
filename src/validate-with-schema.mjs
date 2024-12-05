@@ -3,7 +3,7 @@
 import Ajv from 'ajv'
 import envalid, { str } from 'envalid'
 import fs from 'fs/promises'
-import yaml from 'js-yaml'
+import { loadYAML } from './common.mjs'
 
 // Step 1: Use envalid to validate environment variables
 const env = envalid.cleanEnv(process.env, {
@@ -22,18 +22,6 @@ async function loadJSONSchema(schemaFilePath) {
   }
 }
 
-// Step 3: Load and parse a YAML file
-async function loadYAML(filePath) {
-  try {
-    const fileContent = await fs.readFile(filePath, 'utf8')
-    return yaml.load(fileContent)
-  } catch (error) {
-    console.error(`Error reading or parsing YAML file: ${error.message}`)
-    process.exit(1)
-  }
-}
-
-// Step 4: Validate YAML against JSON schema
 function validateYAML(data, schema) {
   const ajv = new Ajv()
   const validate = ajv.compile(schema)
@@ -55,7 +43,6 @@ async function main() {
 
   const schema = await loadJSONSchema(schemaFilePath)
   const yamlData = await loadYAML(yamlFilePath)
-
   validateYAML(yamlData, schema)
 }
 
