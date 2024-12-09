@@ -1,3 +1,27 @@
 updates:
   - version: v4.1.0
     message: 'Configure Linode Object storage for platform with the wizard page'
+  - version: v4.2.0
+    message: 'Figma designed embedded'
+  - version: v4.3.0
+    message: 'Raw yaml support added'
+  - version: v4.1.1
+    message: 'Wizard modal popup fix'
+  - version: v4.6.0
+    message: 'Jira integration'
+  - version: v4.3.1
+    message: 'Yaml array conversion now working properly'
+  - version: v5.1.0
+    message: 'Source page added'
+  - version: v4.1.2
+    message: 'Wizard modal popup fix when bucket limit has been reached'
+  - version: v5.1.1
+    message: 'Repo Fix for BitBucket'
+  - version: v6.1.0
+    message: 'Connection to youtube'
+  - version: v6.2.0
+    message: 'External Repos with Secrets'
+  - version: v6.1.1
+    message: 'Youtube embed has been fixed'
+  - version: v6.2.1
+    message: 'SSH now working for external repos'
