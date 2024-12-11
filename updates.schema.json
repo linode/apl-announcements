@@ -15,9 +15,14 @@
             "type": "string",
             "pattern": "^[a-zA-Z0-9 .,_-]{1,250}$",
             "maxLength": 250
+          },
+          "releaseUrl": {
+            "type": "string",
+            "pattern": "^(https:\\/\\/github\\.com\\/linode\\/apl-core\\/releases\\/tag\\/v\\d+\\.\\d+\\.\\d+)$",
+            "maxLength": 250
           }
         },
-        "required": ["version", "message"],
+        "required": ["version", "message", "releaseUrl"],
         "additionalProperties": false
       }
     }
