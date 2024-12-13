@@ -1,5 +1,11 @@
 updates:
+  - version: v3.1.0
+    message: 'Configure Linode Object storage for platform with the wizard page'
   - version: v4.1.0
     message: 'Configure Linode Object storage for platform with the wizard page'
   - version: v4.1.1
+    message: 'Bug fixes in the console'
+  - version: v5.1.0
+    message: 'Configure Linode Object storage for platform with the wizard page'
+  - version: v4.1.2
     message: 'Bug fixes in the console'
