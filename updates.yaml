@@ -2,4 +2,4 @@ updates:
   - version: v4.1.0
     message: 'Configure Linode Object storage for platform with the wizard page'
   - version: v4.2.1
-    message: 'Database improvements, argocd fixes and gitea SSO'
+    message: 'Lower DB footprint, Argocd fixes and automatic Gitea SSO'
