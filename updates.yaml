@@ -5,3 +5,5 @@ updates:
     message: 'Lower DB footprint, Argocd fixes and automatic Gitea SSO'
   - version: v4.2.2
     message: 'Lower system databases cpu resources'
+  - version: v4.2.3
+    message: 'Fix: networkpolicies for teams'
