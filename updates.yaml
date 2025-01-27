@@ -7,3 +7,5 @@ updates:
     message: 'Lower system databases cpu resources'
   - version: v4.2.3
     message: 'Fix: networkpolicies for teams'
+  - version: v4.2.4
+    message: 'Fix: open redirect vulnerability'
