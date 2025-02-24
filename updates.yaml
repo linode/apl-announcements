@@ -11,3 +11,5 @@ updates:
     message: 'Fix: open redirect vulnerability'
   - version: v4.3.0
     message: 'Kubernetes 1.32 support, security fixes, performance improvements, and dependency updates.'
+  - version: v4.3.1
+    message: 'Fix(api): 500 error on object storage wizard'
