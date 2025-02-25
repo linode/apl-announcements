@@ -9,3 +9,5 @@ updates:
     message: 'Fix: networkpolicies for teams'
   - version: v4.2.4
     message: 'Fix: open redirect vulnerability'
+  - version: v4.3.0
+    message: 'Kubernetes 1.32 support, security fixes, performance improvements, and dependency updates.'
