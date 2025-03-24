@@ -16,4 +16,4 @@ updates:
   - version: v4.4.0
     message: 'Add support for external Helm charts, Gitea integration improvements, secrets management enhancements'
   - version: v4.4.1
-    message: 'Add support for CNPG recovery options and updated apl bootstrap script'
+    message: 'Add support for CNPG recovery options and APL API bug fixes.'
