@@ -15,3 +15,5 @@ updates:
     message: 'Fix(api): 500 error on object storage wizard'
   - version: v4.4.0
     message: 'Add support for external Helm charts, Gitea integration improvements, secrets management enhancements'
+  - version: v4.4.1
+    message: 'Add support for CNPG recovery options and APL API bug fixes.'
