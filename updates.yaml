@@ -19,3 +19,5 @@ updates:
     message: 'Add support for CNPG recovery options and APL API bug fixes.'
   - version: v4.4.2
     message: 'APL API bug fixes.'
+  - version: v4.4.3
+    message: 'Security patch for critical vulnerability in ingress-nginx-controller (CVE-2025-1974).'
