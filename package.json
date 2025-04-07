@@ -12,7 +12,7 @@
     "ajv": "8.17.1",
     "js-yaml": "^4.1.0",
     "yaml": "2.7.0",
-    "zx": "^8.2.2",
+    "zx": "^8.5.0",
     "envalid": "8.0.0"
   },
   "description": "Otomi Core is an opinionated stack of Kubernetes apps and configurations. Part of Otomi Container Platform.",
