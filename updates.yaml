@@ -21,3 +21,5 @@ updates:
     message: 'APL API bug fixes.'
   - version: v4.4.3
     message: 'Security patch for critical vulnerability in ingress-nginx-controller (CVE-2025-1974).'
+  - version: v4.4.4
+    message: 'Team secrets now correctly synchronize annotations and labels.'
