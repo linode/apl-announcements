@@ -24,10 +24,10 @@ updates:
   - version: v4.4.4
     message: 'Team secrets now correctly synchronize annotations and labels.'
   - version: v4.5.0
-    message: 'Enhanced GitOps compatibility new file structures. New code repository feature. Ingress Nginx Controller upgrade. Improved UX for Team service, build pages and settings. Better web error handling.'
+    message: 'Enhanced GitOps compatibility with new file structures. New code repository feature. Ingress Nginx Controller upgrade. Improved UX for Team service, build pages and settings. Better web error handling.'
   - version: v4.6.0
-    message: 'Support for Kubernets 1.33. Gitea and Keycloak upgrades'
+    message: 'Support for Kubernetes 1.33. Gitea and Keycloak upgrades.'
   - version: v4.7.0
-    message: 'New platform GitOps operator instead of Tekton jobs. Enhanced observability for ArgoCD Applicaitons.'
+    message: 'New platform GitOps operator instead of Tekton jobs. Enhanced observability for ArgoCD Applications.'
   - version: v4.7.1
-    message: 'Optimized initial installation process'
+    message: 'Optimized initial installation process.'
