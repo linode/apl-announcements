@@ -20,6 +20,14 @@ updates:
   - version: v4.4.2
     message: 'APL API bug fixes.'
   - version: v4.4.3
-    message: 'Security patch for critical vulnerability in ingress-nginx-controller (CVE-2025-1974).'
+    message: 'Security patch for critical vulnerability in ingress-nginx-controller CVE-2025-1974.'
   - version: v4.4.4
     message: 'Team secrets now correctly synchronize annotations and labels.'
+  - version: v4.5.0
+    message: 'Enhanced GitOps compatibility new file structures. New code repository feature. Ingress Nginx Controller upgrade. Improved UX for Team service, build pages and settings. Better web error handling.'
+  - version: v4.6.0
+    message: 'Support for Kubernets 1.33. Gitea and Keycloak upgrades'
+  - version: v4.7.0
+    message: 'New platform GitOps operator instead of Tekton jobs. Enhanced observability for ArgoCD Applicaitons.'
+  - version: v4.7.1
+    message: 'Optimized initial installation process'
