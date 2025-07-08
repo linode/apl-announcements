@@ -31,3 +31,5 @@ updates:
     message: 'New platform GitOps operator instead of Tekton jobs. Enhanced observability for ArgoCD Applications.'
   - version: v4.7.1
     message: 'Optimized initial installation process.'
+  - version: v4.7.2
+    message: 'OAuth2 Proxy upgrade and bug fixes.'
