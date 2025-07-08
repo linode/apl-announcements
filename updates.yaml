@@ -32,4 +32,4 @@ updates:
   - version: v4.7.1
     message: 'Optimized initial installation process.'
   - version: v4.7.2
-    message: 'OAuth2 Proxy upgrade and bug fixes.'
+    message: 'OAuth2 Proxy upgrade and session timeout fix. APL operators bug fixes.'
