@@ -33,3 +33,5 @@ updates:
     message: 'Optimized initial installation process.'
   - version: v4.7.2
     message: 'OAuth2 Proxy upgrade and session timeout fix. APL operators bug fixes.'
+  - version: v4.7.3
+    message: 'Tekton registry migration to ghcr.io'
