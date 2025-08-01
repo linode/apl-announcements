@@ -34,4 +34,6 @@ updates:
   - version: v4.7.2
     message: 'OAuth2 Proxy upgrade and session timeout fix. APL operators bug fixes.'
   - version: v4.7.3
-    message: 'Tekton registry migration to ghcr.io'
+    message: 'Tekton registry migration to ghcr.io.'
+  - version: v4.8.0
+    message: 'Support OCI registry cache service.'
