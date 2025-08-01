@@ -36,4 +36,4 @@ updates:
   - version: v4.7.3
     message: 'Tekton registry migration to ghcr.io.'
   - version: v4.8.0
-    message: 'Enabled support for OCI registry cache service. '
+    message: 'Support OCI registry cache service.'
