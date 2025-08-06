@@ -37,3 +37,5 @@ updates:
     message: 'Tekton registry migration to ghcr.io.'
   - version: v4.8.0
     message: 'Support OCI registry cache service.'
+  - version: v4.9.0
+    message: 'Setting "linode-block-storage" as the default storageclass.'
