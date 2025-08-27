@@ -3,23 +3,51 @@
   "type": "object",
   "properties": {
     "updates": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "version": {
-            "type": "string",
-            "pattern": "^v\\d+\\.\\d+\\.\\d+$"
-          },
-          "message": {
-            "type": "string",
-            "pattern": "^[a-zA-Z0-9 .,_-]{1,250}$",
-            "maxLength": 250
+      "type": "object",
+      "properties": {
+        "majors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "supported_k8s_versions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^\\d+\\.\\d+$"
+                }
+              },
+              "releases": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string",
+                      "pattern": "^v\\d+\\.\\d+\\.\\d+$"
+                    },
+                    "message": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9 .,:_()-]{1,250}$",
+                      "maxLength": 250
+                    }
+                  },
+                  "required": ["version", "message"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["version", "supported_k8s_versions", "releases"],
+            "additionalProperties": false
           }
-        },
-        "required": ["version", "message"],
-        "additionalProperties": false
-      }
+        }
+      },
+      "required": ["majors"],
+      "additionalProperties": false
     }
   },
   "required": ["updates"],
