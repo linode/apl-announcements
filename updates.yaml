@@ -1,115 +1,115 @@
 updates:
   - version: v4.1.0
     supported_k8s_versions:
+      - "1.29"
+      - "1.30"
       - "1.31"
-      - "1.32"
-      - "1.33"
     message: 'Configure Linode Object storage for platform with the wizard page'
   - version: v4.2.1
     supported_k8s_versions:
+      - "1.29"
+      - "1.30"
       - "1.31"
-      - "1.32"
-      - "1.33"
     message: 'Lower DB footprint, Argocd fixes and automatic Gitea SSO'
   - version: v4.2.2
     supported_k8s_versions:
+      - "1.29"
+      - "1.30"
       - "1.31"
-      - "1.32"
-      - "1.33"
     message: 'Lower system databases cpu resources'
   - version: v4.2.3
     supported_k8s_versions:
+      - "1.29"
+      - "1.30"
       - "1.31"
-      - "1.32"
-      - "1.33"
     message: 'Fix: networkpolicies for teams'
   - version: v4.2.4
     supported_k8s_versions:
+      - "1.29"
+      - "1.30"
       - "1.31"
-      - "1.32"
-      - "1.33"
     message: 'Fix: open redirect vulnerability'
   - version: v4.3.0
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Kubernetes 1.32 support, security fixes, performance improvements, and dependency updates.'
   - version: v4.3.1
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Fix(api): 500 error on object storage wizard'
   - version: v4.4.0
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Add support for external Helm charts, Gitea integration improvements, secrets management enhancements'
   - version: v4.4.1
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Add support for CNPG recovery options and APL API bug fixes.'
   - version: v4.4.2
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'APL API bug fixes.'
   - version: v4.4.3
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Security patch for critical vulnerability in ingress-nginx-controller CVE-2025-1974.'
   - version: v4.4.4
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Team secrets now correctly synchronize annotations and labels.'
   - version: v4.5.0
     supported_k8s_versions:
+      - "1.30"
       - "1.31"
       - "1.32"
-      - "1.33"
     message: 'Enhanced GitOps compatibility with new file structures. New code repository feature. Ingress Nginx Controller upgrade. Improved UX for Team service, build pages and settings. Better web error handling.'
   - version: v4.6.0
     supported_k8s_versions:
+      - "1.31"
       - "1.32"
       - "1.33"
-      - "1.34"
     message: 'Support for Kubernetes 1.33. Gitea and Keycloak upgrades.'
   - version: v4.7.0
     supported_k8s_versions:
+      - "1.31"
       - "1.32"
       - "1.33"
-      - "1.34"
     message: 'New platform GitOps operator instead of Tekton jobs. Enhanced observability for ArgoCD Applications.'
   - version: v4.7.1
     supported_k8s_versions:
+      - "1.31"
       - "1.32"
       - "1.33"
-      - "1.34"
     message: 'Optimized initial installation process.'
   - version: v4.7.2
     supported_k8s_versions:
+      - "1.31"
       - "1.32"
       - "1.33"
-      - "1.34"
     message: 'OAuth2 Proxy upgrade and session timeout fix. APL operators bug fixes.'
   - version: v4.7.3
     supported_k8s_versions:
+      - "1.31"
       - "1.32"
       - "1.33"
-      - "1.34"
     message: 'Tekton registry migration to ghcr.io.'
   - version: v4.8.0
     supported_k8s_versions:
+      - "1.31"
+      - "1.32"
       - "1.33"
-      - "1.34"
-      - "1.35"
     message: 'Support OCI registry cache service.'
