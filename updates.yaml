@@ -113,3 +113,7 @@ updates:
       - "1.32"
       - "1.33"
     message: 'Support OCI registry cache service.'
+  - version: v4.9.0
+    message: 'Setting "linode-block-storage" as the default storageclass.'
+  - version: v4.10.0
+    message: 'OCI registry support for Kubeflow Pipelines and CNPG backup plugin enhancements.'
