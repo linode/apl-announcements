@@ -11,13 +11,20 @@
             "type": "string",
             "pattern": "^v\\d+\\.\\d+\\.\\d+$"
           },
+          "supported_k8s_versions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+$"
+            }
+          },
           "message": {
             "type": "string",
-            "pattern": "^[a-zA-Z0-9 .,_-]{1,250}$",
+            "pattern": "^[a-zA-Z0-9 .,:_()\"-]{1,250}$",
             "maxLength": 250
           }
         },
-        "required": ["version", "message"],
+        "required": ["version", "supported_k8s_versions", "message"],
         "additionalProperties": false
       }
     }
