@@ -131,3 +131,9 @@ updates:
       - "1.31"
       - "1.32"
       - "1.33"
+  - version: v4.11.0
+    message: 'Added apl-charts versioning and network policies chart. Enabling Prometheus by default. Multiple bug fixes, CI improvements, chart/dependency upgrades.'
+    supported_k8s_versions:
+      - "1.31"
+      - "1.32"
+      - "1.33"
