@@ -144,3 +144,10 @@ updates:
       - "1.32"
       - "1.33"
       - "1.34"
+  - version: v4.11.2
+    message: 'Minor fixes in the code repository feture'
+    supported_k8s_versions:
+      - "1.31"
+      - "1.32"
+      - "1.33"
+      - "1.34"
