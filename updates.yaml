@@ -165,3 +165,17 @@ updates:
       - "1.32"
       - "1.33"
       - "1.34"
+  - version: v4.12.0
+    message: 'Migrating multiple Bitnami chart dependencies to official upstream sources. Adding Kubernetes 1.34 support. Resolved critical upgrade deadlocks and installation race conditions.'
+    supported_k8s_versions:
+      - "1.31"
+      - "1.32"
+      - "1.33"
+      - "1.34"
+  - version: v4.12.1
+    message: 'Fixes Loki templating issue and runtime upgrade script for cloudnative-pg.'
+    supported_k8s_versions:
+      - "1.31"
+      - "1.32"
+      - "1.33"
+      - "1.34"
