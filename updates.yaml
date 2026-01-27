@@ -193,7 +193,7 @@ updates:
       - "1.32"
       - "1.33"
       - "1.34"
-  - version: v4.13.0
+  - version: v4.13.1
     message: 'Improves install and upgrade reliability, cleans up deprecated components and enhances ArgoCD/Helm integration.'
     supported_k8s_versions:
       - "1.31"
