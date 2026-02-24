@@ -223,3 +223,11 @@ updates:
       - "1.33"
       - "1.34"
       - "1.35"
+  - version: v4.14.0
+    message: 'Switched to OpenTelemetry log collection, added support custom Kubernetes manifests and improved ArgoCD sync.'
+    supported_k8s_versions:
+      - "1.31"
+      - "1.32"
+      - "1.33"
+      - "1.34"
+      - "1.35"
