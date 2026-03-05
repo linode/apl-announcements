@@ -1,0 +1,47 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Check Prettier formatting with diffs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          files="$(npx prettier -l .)"
+
+          if [[ -z "$files" ]]; then
+            echo "All matched files use Prettier code style!"
+            exit 0
+          fi
+
+          echo "Prettier formatting issues found in:"
+          echo "$files"
+
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+
+            echo "::group::Prettier diff: $file"
+            diff -u "$file" <(npx prettier "$file") || true
+            echo "::endgroup::"
+          done <<< "$files"
+
+          echo "::error::Prettier formatting issues detected. Run: npx prettier --write ."
+          exit 1
