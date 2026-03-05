@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "ajv": "8.17.1",
+    "envalid": "8.0.0",
     "js-yaml": "^4.1.0",
     "yaml": "2.7.0",
-    "zx": "^8.2.2",
-    "envalid": "8.0.0"
+    "zx": "^8.2.2"
   },
   "description": "Otomi Core is an opinionated stack of Kubernetes apps and configurations. Part of Otomi Container Platform.",
   "engines": {
@@ -30,8 +30,12 @@
   },
   "scripts": {
     "validate-with-dockerhub": "src/validate-with-dockerhub.mjs",
-    "validate-with-schema": "src/validate-with-schema.mjs"
+    "validate-with-schema": "src/validate-with-schema.mjs",
+    "lint": "prettier --check ."
   },
   "type": "commonjs",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
 }
