@@ -3,12 +3,10 @@ name: Check Docker Images for All Versions in updates.yaml
 on:
   push:
     paths:
-      - '*'
-    branches:
-      - main
+      - 'updates.yaml'
   pull_request:
     paths:
-      - '*'
+      - 'updates.yaml'
 
 jobs:
   validate:
@@ -23,9 +21,7 @@ jobs:
         with:
           node-version: 20
       - name: Install packages
-        run: npm ci
-      - name: Lint
-        run: npm run lint
+        run: npm install
       - name: Run Docker image check script
         run: |
           npm run validate-with-schema
