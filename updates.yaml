@@ -239,3 +239,27 @@ updates:
       - '1.33'
       - '1.34'
       - '1.35'
+  - version: v4.15.1
+    message: 'Added support for BYO Git and BYO Catalog'
+    supported_k8s_versions:
+      - '1.31'
+      - '1.32'
+      - '1.33'
+      - '1.34'
+      - '1.35'
+  - version: v4.15.2
+    message: 'Fixed regular users not being able to read logs in Loki.'
+    supported_k8s_versions:
+      - '1.31'
+      - '1.32'
+      - '1.33'
+      - '1.34'
+      - '1.35'
+  - version: v4.15.3
+    message: 'Fixed knativeserving upgrade.'
+    supported_k8s_versions:
+      - '1.31'
+      - '1.32'
+      - '1.33'
+      - '1.34'
+      - '1.35'
