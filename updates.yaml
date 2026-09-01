@@ -298,3 +298,10 @@ updates:
       - '1.34'
       - '1.35'
       - '1.36'
+  - version: v6.2.1
+    message: 'Minor UI and security improvements.'
+    supported_k8s_versions:
+      - '1.33'
+      - '1.34'
+      - '1.35'
+      - '1.36'
